@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RootArticleCell" id="gTV-IL-0wX" customClass="RootArticleCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                <subviews>
+                    <button opaque="NO" tag="1002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRe-HQ-v3o">
+                        <rect key="frame" x="8" y="8" width="76" height="30"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="76" id="nHp-Lj-5SP"/>
+                        </constraints>
+                        <state key="normal" title="生活百科"/>
+                        <connections>
+                            <action selector="lifeClick:" destination="gTV-IL-0wX" eventType="touchUpInside" id="ssF-wO-6XZ"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="1003" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Md9-QW-eXa">
+                        <rect key="frame" x="8" y="35" width="76" height="30"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="76" id="xVX-fV-GrS"/>
+                        </constraints>
+                        <state key="normal" title="快乐分享"/>
+                        <connections>
+                            <action selector="shareClick:" destination="gTV-IL-0wX" eventType="touchUpInside" id="2PV-6v-Ed1"/>
+                        </connections>
+                    </button>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Skf-5p-rFd">
+                        <rect key="frame" x="88" y="8" width="279" height="84"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </tableView>
+                    <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Yr-9g-csA">
+                        <rect key="frame" x="8" y="62" width="76" height="30"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="76" id="fon-Mr-rEo"/>
+                        </constraints>
+                        <state key="normal" title="美文阅读"/>
+                        <connections>
+                            <action selector="readClick:" destination="gTV-IL-0wX" eventType="touchUpInside" id="CG2-5R-xSb"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="Skf-5p-rFd" firstAttribute="leading" secondItem="Md9-QW-eXa" secondAttribute="trailing" constant="4" id="0EW-b6-WjO"/>
+                <constraint firstItem="gRe-HQ-v3o" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="4nF-JS-SHk"/>
+                <constraint firstItem="Md9-QW-eXa" firstAttribute="height" secondItem="gRe-HQ-v3o" secondAttribute="height" id="GL4-ov-3Li"/>
+                <constraint firstAttribute="trailing" secondItem="Skf-5p-rFd" secondAttribute="trailing" constant="8" id="J2Z-qg-Ld9"/>
+                <constraint firstItem="Skf-5p-rFd" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="TBl-bC-ooV"/>
+                <constraint firstItem="5Yr-9g-csA" firstAttribute="height" secondItem="gRe-HQ-v3o" secondAttribute="height" id="U8L-zB-fKv"/>
+                <constraint firstItem="Md9-QW-eXa" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="XnB-84-YZw"/>
+                <constraint firstAttribute="bottom" secondItem="Skf-5p-rFd" secondAttribute="bottom" constant="8" id="bVZ-Nz-6HQ"/>
+                <constraint firstItem="5Yr-9g-csA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="cNW-g5-LGy"/>
+                <constraint firstAttribute="bottom" secondItem="5Yr-9g-csA" secondAttribute="bottom" constant="8" id="eti-CX-MqF"/>
+                <constraint firstItem="5Yr-9g-csA" firstAttribute="top" secondItem="Md9-QW-eXa" secondAttribute="bottom" constant="-3" id="k28-pF-1TL"/>
+                <constraint firstItem="Md9-QW-eXa" firstAttribute="top" secondItem="gRe-HQ-v3o" secondAttribute="bottom" constant="-3" id="pdp-Bs-M5z"/>
+                <constraint firstItem="gRe-HQ-v3o" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="sGJ-ch-wFr"/>
+            </constraints>
+            <size key="customSize" width="310" height="120"/>
+            <connections>
+                <outlet property="lifeButton" destination="gRe-HQ-v3o" id="9v6-iX-iLC"/>
+                <outlet property="readButton" destination="5Yr-9g-csA" id="buk-2T-6aM"/>
+                <outlet property="shareButton" destination="Md9-QW-eXa" id="SqA-cO-QR8"/>
+                <outlet property="tableView" destination="Skf-5p-rFd" id="yg1-7C-LzX"/>
+            </connections>
+            <point key="canvasLocation" x="181.5" y="389"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,86 @@
+//
+//  PrefixHeader.pch
+//  Zero
+//
+//  Created by 黄郑果 on 16/8/22.
+//  Copyright © 2016年 lanouhn. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+/* 引入全局宏文件 */
+#import "URLConfig.h"
+
+/* 引入网络管理 */
+#import "NetworkManager.h"
+
+/* 引入网络图片处理 */
+#import <UIImageView+WebCache.h>
+#import <UIButton+WebCache.h>
+
+/* button网络图片 */
+#import <UIButton+WebCache.h>
+
+/* 轮播图头文件 */
+#import <SDCycleScrollView.h>
+
+/* 商品详情界面 */
+#import "ProductDetailViewController.h"
+
+/* 中划线label */
+#import "StrikeLabel.h"
+
+/* 布局btn */
+#import "LayoutButton.h"
+
+/* 用户信息管理类 */
+#import "UserInfoManager.h"
+
+/* 用户信息model */
+#import "UserInfoModel.h"
+
+/* 返回指定颜色的image */
+#import "ImageBackgroundColor.h"
+
+/* 获取图片高度及url */
+#import "XRImage.h"
+
+/* 下拉刷新 上提加载 */
+#import "MJRefresh.h"
+
+/* label中划线 */
+#import "StrikeForLabel.h"
+
+/* 设置button选中未选中 */
+#import "SetMenuButton.h"
+
+#endif /* PrefixHeader_pch */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatToCell" rowHeight="85" id="KGk-i7-Jjw" customClass="ChatToCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="73"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="72"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A1z-as-abH">
+                        <rect key="frame" x="72" y="8" width="295" height="56"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ad.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="jo0-XD-xHP">
+                        <rect key="frame" x="8" y="8" width="56" height="56"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="56" id="MoR-an-euV"/>
+                            <constraint firstAttribute="width" constant="56" id="ufa-PH-x4I"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="A1z-as-abH" firstAttribute="leading" secondItem="jo0-XD-xHP" secondAttribute="trailing" constant="8" id="8lw-zk-qdI"/>
+                    <constraint firstAttribute="bottom" secondItem="A1z-as-abH" secondAttribute="bottom" constant="8" id="AhU-J6-TCm"/>
+                    <constraint firstAttribute="trailing" secondItem="A1z-as-abH" secondAttribute="trailing" constant="8" id="Day-Lk-IkN"/>
+                    <constraint firstItem="jo0-XD-xHP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="PAI-5i-Yse"/>
+                    <constraint firstItem="A1z-as-abH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="eao-pe-vII"/>
+                    <constraint firstItem="jo0-XD-xHP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="zVM-1e-8nN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="headImg" destination="jo0-XD-xHP" id="KfG-C8-Uoj"/>
+                <outlet property="messageLabel" destination="A1z-as-abH" id="6sS-Af-ee7"/>
+            </connections>
+            <point key="canvasLocation" x="241.5" y="127.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ad.jpg" width="200" height="200"/>
+    </resources>
+</document>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatFromCell" rowHeight="73" id="KGk-i7-Jjw" customClass="ChatFromCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="73"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="72"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xx.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="fca-FN-MJC">
+                        <rect key="frame" x="311" y="8" width="56" height="56"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="56" id="92H-4H-O86"/>
+                            <constraint firstAttribute="width" constant="56" id="UIp-YW-UWn"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WhG-ff-VVm">
+                        <rect key="frame" x="8" y="8" width="295" height="56"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fca-FN-MJC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="HgC-G7-ZME"/>
+                    <constraint firstAttribute="trailing" secondItem="fca-FN-MJC" secondAttribute="trailing" constant="8" id="VRv-Gd-zFA"/>
+                    <constraint firstItem="fca-FN-MJC" firstAttribute="leading" secondItem="WhG-ff-VVm" secondAttribute="trailing" constant="8" id="Wef-io-cva"/>
+                    <constraint firstItem="WhG-ff-VVm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="doq-PK-qY2"/>
+                    <constraint firstItem="WhG-ff-VVm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="q2g-EK-LN0"/>
+                    <constraint firstAttribute="bottom" secondItem="WhG-ff-VVm" secondAttribute="bottom" constant="8" id="vPP-xR-aIq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="headerImg" destination="fca-FN-MJC" id="9yS-TB-55b"/>
+                <outlet property="messageLabel" destination="WhG-ff-VVm" id="moz-bf-EBv"/>
+            </connections>
+            <point key="canvasLocation" x="235.5" y="138.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="xx.jpg" width="200" height="200"/>
+    </resources>
+</document>
